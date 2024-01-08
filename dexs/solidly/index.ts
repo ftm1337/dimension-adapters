@@ -1,5 +1,11 @@
+import { CHAIN } from "../../helpers/chains";
 import { univ2Adapter } from "../../helpers/getUniSubgraphVolume";
 
-export default univ2Adapter({
-    "fantom": "https://api.thegraph.com/subgraphs/name/spartacus-finance/solidly"
-}, {});
+const endpoints = {
+  [CHAIN.FANTOM]: "https://api.thegraph.com/subgraphs/name/spartacus-finance/solidly",
+};
+
+const adapter = univ2Adapter(endpoints, {"gasToken" : "coingecko:fantom"});
+adapter.adapter.fantom.start = async () => 1650883041;
+
+export default adapter
