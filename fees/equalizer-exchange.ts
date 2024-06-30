@@ -269,6 +269,7 @@ const fetch = async (timestamp: number): Promise<FetchResultFees> => {
 }
 
 const adapter: SimpleAdapter = {
+  version: 2,
   adapter: {
     [CHAIN.FANTOM]: {
       fetch,

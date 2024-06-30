@@ -116,6 +116,11 @@ const adapter: any = {
     bsc: { fetch, start: 1685491200, },
     blast: { fetch, start: 1685491200, },
     era: { fetch, start: 1685491200, },
+    optimism: { fetch, start: 1685491200, },
+    mode: { fetch, start: 1685491200, },
+    base: { fetch, start: 1685491200, },
+    scroll: { fetch, start: 1685491200, },
+    taiko: { fetch, start: 1685491200, },
   },
 };
 
